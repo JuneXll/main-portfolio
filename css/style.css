@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color:#555;
+}
+
+h3 {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+hr {
+    border: solid 1px #f7f7e8;
+    width: 85%;
+}
+
+/* Nav bar Styling */
+ul {
+    list-style-type: none;
+    margin: 15px;
+    margin-top: 30vh;
+    padding: 0;
+    width: 100px;
+    height: 300px;
+    background-color: #a6a6a4;
+    position: fixed;
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  li a {
+    display: block;
+    color: #f7f7e8;
+    padding: 35px 17px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: #f7f7e8;
+    font-weight: bolder;
+  }
+
+/* Styles for landing page div */
+#landing-background {
+    background-color: #9dad7f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .landing-page {
+    background-color: #9dad7f;
+    height: 250px;
+    width: 500px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: double 10px #f7f7e8;
+    }
+
+/* Styles for about me div */
+#about-me {
+    background-color: #f7f7e8;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+}
+  .about-me-header {
+      margin-bottom: 30px;
+  }
+
+  .about-me-header hr {
+      border-color: #a6a6a4;
+      width: 100%;
+  }
+
+  .about-containers {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+
+  .about-me {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    height: 400px;
+    width: 350px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img img {
+    height: 370px;
+    width: 290px;
+    border: double 5px #9dad7f;
+    padding: 2px;
+  }
+
+/* Styles for project div */
+#projects {
+    background-color: #c7cfb7;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-header {
+    margin-bottom: 30px;
+  }
+
+  .project-header hr {
+    border-color: white;
+    width: 100%;
+  }
+
+  .project-containers {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .project-containers img {
+    border: double 5px #9dad7f;
+    padding: 2px;
+    transition: border;
+  }
+
+  .project:hover img {
+      border: double 7px #555;
+  }
+
+  .project {
+      position:relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+  }
+
+  figcaption {
+      background-color: #9dad7f;
+      margin: -90px 0;
+      position:absolute;
+  }
+
+  figcaption p {
+      font-size: 12px;
+  }
+
+
+/* Styles for contact me div */
+#contact-me {
+    background-color: #557174;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .contact-header {
+      margin-bottom: 50px;
+  }
+
+  .contact-header h1 {
+    color: #f7f7e8;
+  }
+
+  .contact-header hr {
+      width: 100%;
+      color: #f7f7e8;
+  }
+
+  .icon-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  i {
+    background-color: #557174;
+    margin: 50px;
+    display: flex;
+    transition: background-color, color, transform;
+  }
+
+  i:hover {
+      background-color: #f7f7e8;
+      color: #557174;
+      transform: scale(2,2);
+  }
+
+  .fas, .fab {
+      color: #f7f7e8;
+  }
+
+
+/* @media screen and (max-width:768) {
+    body {
+        background-color: blue;
+    }
+
+    #projects {
+
+    }
+
+    #contact-me {
+
+    }
+} */

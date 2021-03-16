@@ -64,7 +64,7 @@ ul {
 
 /* Styles for landing page div */
 #landing-background {
-    background-image: linear-gradient(to right, var(--color-one), var(--color-three));
+    background-image: linear-gradient(to left, var(--color-one), var(--color-three));
     height: 100vh;
     width: 100vw;
     display: flex;

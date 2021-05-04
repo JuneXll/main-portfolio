@@ -25,9 +25,10 @@ h1 {
     color:#555;
 }
 
-h3 {
+.h3, h3 {
     font-family:var(--main-font-family);
     font-weight: 100;
+    font-size:large;
 }
 
 hr {
@@ -44,10 +45,10 @@ ul {
     width: 100px;
     height: 300px;
     background-color: #a6a6a4;
-    position: fixed;
     display: var(--main-display);
     flex-direction: column;
     justify-content: center;
+    z-index: 1000;
   }
   
   li a {
@@ -103,6 +104,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex: 0 1 100%;
+    z-index: -1;
 }
   .about-me-header {
       margin-bottom: 30px;
@@ -150,7 +152,8 @@ ul {
   }
 
   .project-header {
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .project-header hr {
@@ -174,12 +177,16 @@ ul {
     transition: border;
   }
 
-  .project:hover img {
+  .col:hover img {
       border: double 7px #555;
   }
+  
+  .hover:hover img {
+    border: double 7px #555;
+}
+
 
   .project {
-      position:relative;
       display: var(--main-display);
       flex-direction: column;
       justify-content: space-evenly;
@@ -187,16 +194,16 @@ ul {
 
   }
 
+  .quad-container {
+    width: 440px;
+    height: 560px;
+  }
+
   figcaption {
       background-color: var(--color-one);
       margin: -90px 0;
       position: absolute;
   }
-
-  figcaption p {
-      font-size: 12px;
-  }
-
 
 /* Styles for contact me div */
 #contact-me {
